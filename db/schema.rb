@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_11_07_211822) do
   create_table "projects", force: :cascade do |t|
     t.string "name"
     t.string "details"
+    t.boolean "done"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

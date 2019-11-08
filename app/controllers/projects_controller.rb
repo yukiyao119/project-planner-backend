@@ -32,7 +32,7 @@ class ProjectsController < ApplicationController
     private 
 
     def project_params 
-        params.permit(:name, :details, :user_id)
+        params.permit(:name, :details, :done, :user_id)
     end
     
 end
